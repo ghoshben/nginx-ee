@@ -988,6 +988,7 @@ _configure_nginx() {
         # built-in modules
         if [ -z "$OVERRIDE_NGINX_MODULES" ]; then
             NGINX_INCLUDED_MODULES="--with-http_stub_status_module \
+        --with-http_secure_link_module \
         --with-http_realip_module \
         --with-http_auth_request_module \
         --with-http_addition_module \
